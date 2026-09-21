@@ -1,0 +1,42 @@
+# 环境与密钥
+.env
+venv/
+.venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# 模型与向量（体积大，可重新生成）
+rags/medical_qa/models/
+rags/medical_qa/vectors/
+rags/medical_qa/chroma_db/
+rags/medical_qa/bm25/
+rags/medical_qa/images/
+
+# 原始大数据集（80万条，可重新下载）
+rags/medical_qa/Chinese-medical-dialogue/data/query_answers.json
+
+# 患者信息（含姓名电话，敏感数据）
+patients_information/informations.csv
+
+# 无关项目目录（不是医疗问答核心代码）
+rags/project1-xingfa/
+rags/project2-DM/
+rags/project3-pic/
+rags/project5-medical/
+model_fine-tuning/
+Huatuo-Llama-Med-Chinese/
+Qwen3-0.6B/
+cnn_network.py
+agents/
+playwright_stuffs/
+settings/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
