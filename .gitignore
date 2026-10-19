@@ -35,6 +35,20 @@ agents/
 playwright_stuffs/
 settings/
 
+# Docker 镜像导出包（800MB+，可重新 build/save）
+*.tar
+
+# 本地 HuggingFace 模型缓存（90MB+，可重新下载）
+huggingface/
+
+# 运行时数据与日志
+*.db
+log.txt
+*.log
+
+# 压缩包残留垃圾
+__MACOSX/
+
 # IDE / OS
 .vscode/
 .idea/

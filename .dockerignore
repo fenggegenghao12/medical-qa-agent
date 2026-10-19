@@ -1,0 +1,17 @@
+# 敏感信息：API 密钥绝不进镜像
+.env
+
+# 运行时数据：对话记录/患者信息/日志，不进镜像（用 volume 挂载）
+chat_history.db
+patients_information/
+log.txt
+
+# 缓存与垃圾文件
+__pycache__/
+**/__pycache__/
+**/__MACOSX/
+huggingface/xet/
+*.pyc
+
+# 版本控制
+.git/
